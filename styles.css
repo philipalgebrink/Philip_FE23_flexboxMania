@@ -1,69 +1,100 @@
 /* Header */
 
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: white;
-    color: #fff;
-    padding: 1% 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  h1 {
-    margin: 0;
-    color: #333333;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-right: 20px;
-  }
-  
-  nav ul li:last-child {
-    margin-right: 0;
-  }
-  
-  nav ul li a {
-    color: #333333;
-    text-decoration: none;
-  }
+html {
+  font-size: 16px;
+}
 
-  .sub {
-    background-color: #333;
-    color: #fff;
-    padding: 8%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  h2 {
-    font-size: 64px;
-    font-weight: bold;
-    margin-bottom: 20px; /* Adjust this margin as needed */
-  }
-  
-  .button {
-    padding: 25px 40px;
-    margin-top: 60px;
-    background-color: white;
-    color: #333;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-  }
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: white;
+  color: #fff;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0;
+  color: #333333;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #333333;
+  text-decoration: none;
+}
+
+/* Hero */
+
+.hero {
+  background-color: #333;
+  color: #fff;
+  padding: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Adjust this margin as needed */
+}
+
+.hero .button {
+  padding: 25px 40px;
+  margin-top: 60px;
+  background-color: white;
+  color: #333;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Cards */
+
+.content-wrapper {
+  padding: 2rem 3rem;
+  background-color: hotpink; /* Temp */
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.row .card {
+  background-color: gray;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.row .card--big {
+  flex-grow: 2;
+}
