@@ -80,21 +80,40 @@ nav ul li a {
 
 .content-wrapper {
   padding: 2rem 3rem;
-  background-color: hotpink; /* Temp */
   max-width: 1300px;
   margin: 0 auto;
 }
 
 .row {
   display: flex;
+  margin: 2rem 0;
 }
 
 .row .card {
-  background-color: gray;
-  flex-grow: 1;
-  flex-basis: 0;
+  width: 33.33%;
+  flex-grow: 0;
+  margin: 0 1rem;
+  position: relative;
+  border-bottom: 1px solid #BDBDBD;
 }
 
 .row .card--big {
-  flex-grow: 2;
+  flex-grow: 1;
+  flex-basis: calc(67% + 2rem);
+}
+
+.card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #BDBDBD;
+  height: 15rem;
+  width: 100%;
+  font-size: 8rem;
+}
+
+.card-context-button {
+  position: absolute;
+  right: 0.5rem;
+  top: 1rem;
 }
